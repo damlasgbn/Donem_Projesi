@@ -1,4 +1,4 @@
-﻿@*
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
@@ -15,77 +15,63 @@
             <div class="login-html">
                 <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
                 <label for="tab-1" class="tab">
-                    Sign In
+                    Giriş yap
                 </label>
                 <input id="tab-2" type="radio" name="tab" class="sign-up">
                 <label for="tab-2" class="tab">
-                    Sign Up
+                    Üye Ol 
                 </label>
                 <div class="login-form">
                     <div class="sign-in-htm">
                         <div class="group">
                             <label for="user" class="label">
-                                Username
+                                Kullanıcı Adı:
                             </label>
                             <input id="user" type="text" class="input">
                         </div>
                         <div class="group">
                             <label for="pass" class="label">
-                                Password
+                                Şifre:
                             </label>
                             <input id="pass" type="password" class="input" data-type="password">
                         </div>
+                        
                         <div class="group">
-                            <input id="check" type="checkbox" class="check" checked>
-                            <label for="check" class="keepMe">
-                                <span class="icon"></span>
-                                Keep me Signed in
-                            </label>
-                        </div>
-                        <div class="group">
-                            <input type="submit" class="button" value="Sign In">
+                            <input type="submit" class="button" value="Giriş YAP">
                         </div>
                         <div class="hr"></div>
-                        <div class="foot-lnk">
-                            <a href="#forgot">
-                                Forgot Password?
-                            </a>
-                        </div>
+                        
                     </div>
                     <div class="sign-up-htm">
                         <div class="group">
                             <label for="user" class="label">
-                                Username
+                                Kullanıcı Adı:
                             </label>
                             <input id="user" type="text" class="input">
                         </div>
                         <div class="group">
                             <label for="pass" class="label">
-                                Password
+                                Şifre:
                             </label>
                             <input id="pass" type="password" class="input" data-type="password">
                         </div>
                         <div class="group">
                             <label for="pass" class="label">
-                                Repeat Password
+                                Şifre Tekrarı:
                             </label>
                             <input id="pass" type="password" class="input" data-type="password">
                         </div>
                         <div class="group">
                             <label for="pass" class="label">
-                                Email Address
+                               Mail Adresi:
                             </label>
                             <input id="pass" type="text" class="input">
                         </div>
                         <div class="group">
-                            <input type="submit" class="button sgnBtn" value="Sign Up">
+                            <input type="submit" class="button sgnBtn" value="Üye Ol">
                         </div>
                         <div class="hr hrS"></div>
-                        <div class="foot-lnk">
-                            <a href="#forgot">
-                                Do you have an account?
-                            </a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -95,9 +81,9 @@
 
 
             body {
-                background-image: url("https://www.obaliderperde.com.tr/wp-content/gallery/sahne-perdesi/sahneperdesi1.jpg");
+                background-image: url("https://i.pinimg.com/236x/c2/57/3c/c2573ca5629fbfb15b3799ff04c293bb.jpg?nii=t");
                 background-attachment: fixed;
-                background-size: cover;
+                background-size:
                 background-repeat: no-repeat;
                 height: auto;
                 width: auto;
@@ -115,7 +101,7 @@
             }
 
             a {
-                color: inherit;
+                color: black ;
                 text-decoration: none;
             }
 
@@ -125,9 +111,11 @@
                 backdrop-filter: blur(10px);
                 border-radius: 30px;
                 padding: 40px;
-                background: none;
+                background-color: gray;
                 border: solid white 2px;
                 box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+                
+
             }
 
             .login-html .sign-in-htm, .login-html .sign-up-htm {
@@ -163,7 +151,7 @@
 
             .login-html .sign-in:checked + .tab,
             .login-html .sign-up:checked + .tab {
-                color: #fff;
+                color: black;
                 border-color: #fff;
                 cursor: pointer;
             }
@@ -203,7 +191,7 @@
             }
 
             .login-form .group .label {
-                color: white;
+                color: black;
                 font-size: 10px;
                 margin: 8px;
             }
