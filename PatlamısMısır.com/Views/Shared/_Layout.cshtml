@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -24,6 +24,10 @@
             background-image
         }
 
+        
+
+        
+
 
 
     </style>
@@ -33,24 +37,20 @@
                 <img src="https://e7.pngegg.com/pngimages/648/178/png-clipart-logo-food-popcorn-others-miscellaneous-baking.png"
                      style="width:50px;height:60px;border-radius:20px;" alt="Resim ile ilgili açıklama">
 
-                <a class=" navbar-brand text-light box-bg-text" asp-area=""><h1 class="img-h1">PATLAMIŞ MISIR</h1> </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                <a class=" navbar-brand text-light box-bg-text" asp-area="" asp-controller="Home" asp-action="Index"><h1 class="img-h1">PATLAMIŞ MISIR</h1> </a>
+                <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                        
+                        
                         <li class="nav-item">
-                            <a class="nav-link text-light"  asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-
+                            <a class="nav-link text-light " style="font-size:100%" asp-area="" asp-controller="Home" asp-action="Katagoriler">Katagoriler</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link  text-light"  asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light " asp-area="" asp-controller="Home" asp-action="Katagoriler">Katagoriler</a>
-                        </li>
+                        
                         
                        
 
@@ -72,7 +72,7 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="d-flex justify-content-center p-5">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -99,3 +99,5 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+    
