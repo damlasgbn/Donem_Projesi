@@ -18,15 +18,22 @@ namespace PatlamısMısır.com.Controllers
             return View();
         }
 
+        public IActionResult Katagoriler()
+        {
+            return View();
+        }
+        
+        public IActionResult AnaButon()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
         }
 
-        public IActionResult Katagoriler()
-        {
-            return View();
-        }
+        
         public IActionResult UyeOlma()
         {
             return View();
