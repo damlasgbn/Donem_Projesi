@@ -23,10 +23,7 @@ namespace PatlamısMısır.com.Controllers
             return View();
         }
         
-        public IActionResult AnaButon()
-        {
-            return View();
-        }
+       
 
         public IActionResult Privacy()
         {
@@ -38,6 +35,39 @@ namespace PatlamısMısır.com.Controllers
         {
             return View();
         }
+
+        public IActionResult KorkuFilmi()
+        {
+            return View();
+        }
+
+        public IActionResult AksiyonFilmi()
+        {
+            return View();
+        }
+
+        public IActionResult AskFilmi()
+        {
+            return View();
+        }
+
+        public IActionResult BilimFilmi()
+        {
+            return View();
+        }
+
+        public IActionResult KomediFilmi()
+        {
+            return View();
+        }
+
+        public IActionResult CocukFilmi()
+        {
+            return View();
+        }
+
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
